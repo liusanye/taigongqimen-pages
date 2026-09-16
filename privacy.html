@@ -1,66 +1,90 @@
 <!doctype html>
-<html lang="zh-Hans">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>隐私政策 - 太公奇门排盘</title>
-  <style>
+<html lang="zh-Hans"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>隐私政策 - 太公奇门排盘与转宫</title><style>
     :root {
       color-scheme: light dark;
       --bg: #0f171d;
+      --panel: #142028;
       --text: #f5f1e8;
       --muted: #b8afa2;
       --gold: #d9a84d;
+      --red: #ef3f46;
     }
+    * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       background: var(--bg);
       color: var(--text);
-      line-height: 1.65;
+      line-height: 1.6;
     }
     main {
-      width: min(840px, calc(100% - 40px));
+      width: min(880px, calc(100% - 40px));
       margin: 0 auto;
-      padding: 64px 0;
+      padding: 72px 0;
     }
-    a { color: var(--gold); text-decoration: none; }
-    h1 { margin: 0 0 10px; font-size: 36px; letter-spacing: 0; }
-    h2 { margin: 34px 0 8px; font-size: 21px; }
-    p, li { color: var(--muted); }
-    ul { padding-left: 20px; }
-    .date { color: #837b70; }
-    footer { margin-top: 56px; color: #837b70; font-size: 14px; }
-  </style>
-</head>
-<body>
-  <main>
-    <a href="./index.html">返回首页</a>
-    <h1>隐私政策</h1>
-    <p class="date">生效日期：2026 年 5 月 23 日</p>
-
-    <h2>概述</h2>
-    <p>太公奇门排盘与转宫尊重用户隐私。本应用定位为传统文化排盘、转宫分析和卦例记录工具，不包含广告追踪，不建立独立账号系统，也不向第三方出售用户数据。</p>
-
-    <h2>我们收集的数据</h2>
-    <p>本应用不会主动收集用户的姓名、电话号码、精确位置、通讯录、照片、麦克风、相机或广告标识符。</p>
-
-    <h2>用户生成内容</h2>
-    <p>用户在应用中创建的排盘记录、转宫视角和问事备注会保存在设备本地。若用户开启 iCloud 同步，相关记录可能通过 Apple iCloud 在用户自己的设备之间同步。</p>
-
-    <h2>iCloud</h2>
-    <p>iCloud 同步由 Apple 提供。开发者不提供独立云账号，也不会将 iCloud 数据用于广告、跨 App 追踪或第三方营销。</p>
-
-    <h2>第三方服务</h2>
-    <p>本应用当前不集成第三方广告 SDK、第三方分析 SDK 或第三方登录服务。</p>
-
-    <h2>儿童隐私</h2>
-    <p>本应用不面向儿童收集个人信息。如果后续发现存在不符合本政策的数据处理方式，我们会修正应用和本政策。</p>
-
-    <h2>政策更新</h2>
-    <p>如果应用功能发生变化，本隐私政策可能随之更新。更新后的版本会发布在本页面。</p>
-
-    <footer>© 2026 liang liu. All rights reserved.</footer>
-  </main>
-</body>
-</html>
+    .mark {
+      width: 72px;
+      height: 72px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(145deg, #17242d, #0b1116);
+      border: 1px solid rgba(217, 168, 77, .45);
+      color: var(--red);
+      font-size: 44px;
+      font-weight: 800;
+      margin-bottom: 24px;
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(34px, 6vw, 56px);
+      line-height: 1.1;
+      letter-spacing: 0;
+    }
+    p {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+    .links {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 32px;
+    }
+    a {
+      color: var(--gold);
+      text-decoration: none;
+    }
+    .button {
+      padding: 10px 14px;
+      border: 1px solid rgba(217, 168, 77, .55);
+      border-radius: 8px;
+      color: var(--text);
+    }
+    section {
+      margin-top: 56px;
+      padding-top: 28px;
+      border-top: 1px solid rgba(217, 168, 77, .18);
+    }
+    h2 {
+      font-size: 22px;
+      margin: 0 0 12px;
+    }
+    ul {
+      margin: 0;
+      padding-left: 20px;
+      color: var(--muted);
+    }
+    footer {
+      margin-top: 64px;
+      color: #837b70;
+      font-size: 14px;
+    }
+  </style></head><body><main><nav><a href="./index.html">应用介绍</a> · <a href="./support.html">支持与帮助</a> · <a href="./privacy.html">隐私政策</a></nav><h1>隐私政策</h1><section><h2>适用范围</h2><p>本政策适用于太公奇门排盘与转宫当前版本。更新日期：2026年9月16日。开发者：liang liu。应用无需注册账号，不含广告、广告追踪、第三方分析或第三方登录SDK。</p></section>
+<section><h2>本机处理与保存</h2><p>你输入的出生日期、姓名、性别、所问之事、断卦备注，以及选定出生地的名称、经纬度和时区，用于排盘及卦例记录。计算在设备上进行，保存的记录存放在应用的本机数据目录中，开发者没有接收这些记录的服务器。</p></section>
+<section><h2>出生地搜索</h2><p>仅在你主动点击搜索时，地点关键词通过Apple MapKit发送给Apple地图服务以返回坐标和时区；网络服务可能处理IP地址等连接信息。应用不会同时上传姓名、出生时间、问事或断卦内容，也不会读取手机当前GPS位置。Apple地图服务的数据处理遵循Apple的隐私政策。</p></section>
+<section><h2>你的选择</h2><p>出生地搜索是可选功能。关闭“使用真太阳时”即可使用既有排盘入口，无需发送地点搜索请求。已选地点的排盘可离线进行。打开支持、隐私网页或反馈页面时，相应网站会接收正常网页访问请求，GitHub反馈需遵循GitHub的服务和隐私政策。</p></section>
+<section><h2>保存期限与删除</h2><p>本机卦例会一直保存，直至你删除应用及其数据。可在历史记录中清空姓名、问事或备注并更新保存；要移除全部本机记录，请在iOS设置的储存空间中选择“删除App”，而非保留数据的“卸载App”。系统备份中的副本需在你自己的设备或iCloud备份设置中另行管理。</p></section>
+<section><h2>iCloud与数据用途</h2><p>当前版本不提供应用内iCloud记录同步。iOS自身的设备备份由你的系统设置决定。开发者不会出售卦例，不会将记录用于广告、跨App追踪或营销。</p></section>
+<section><h2>联系与政策更新</h2><p>可通过“支持与反馈”中的GitHub问题反馈联系开发者。该渠道为公开页面，请勿提交真实出生资料、身份证件或完整私人卦例；使用虚构示例说明问题即可。功能或数据处理方式变化时，本页与在线政策会同步更新。</p></section><section><h2>服务方政策与联系方式</h2><p><a href="https://www.apple.com/legal/privacy/">Apple隐私政策</a> · <a href="https://www.apple.com/legal/privacy/data/zh-cn/apple-maps/">Apple地图与隐私</a> · <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub隐私声明</a></p><p><a href="https://github.com/liusanye/taigongqimen-pages/issues/new">联系开发者</a></p></section><footer>© 2026 liang liu. <nav><a href="./index.html">应用介绍</a> · <a href="./support.html">支持与帮助</a> · <a href="./privacy.html">隐私政策</a></nav></footer></main></body></html>

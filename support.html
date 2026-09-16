@@ -1,67 +1,91 @@
 <!doctype html>
-<html lang="zh-Hans">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>支持与帮助 - 太公奇门排盘</title>
-  <style>
+<html lang="zh-Hans"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>支持与帮助 - 太公奇门排盘与转宫</title><style>
     :root {
       color-scheme: light dark;
       --bg: #0f171d;
+      --panel: #142028;
       --text: #f5f1e8;
       --muted: #b8afa2;
       --gold: #d9a84d;
+      --red: #ef3f46;
     }
+    * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       background: var(--bg);
       color: var(--text);
-      line-height: 1.65;
+      line-height: 1.6;
     }
     main {
-      width: min(840px, calc(100% - 40px));
+      width: min(880px, calc(100% - 40px));
       margin: 0 auto;
-      padding: 64px 0;
+      padding: 72px 0;
     }
-    a { color: var(--gold); text-decoration: none; }
-    h1 { margin: 0 0 18px; font-size: 36px; letter-spacing: 0; }
-    h2 { margin: 34px 0 8px; font-size: 21px; }
-    p, li { color: var(--muted); }
-    ul { padding-left: 20px; }
-    footer { margin-top: 56px; color: #837b70; font-size: 14px; }
-  </style>
-</head>
-<body>
-  <main>
-    <a href="./index.html">返回首页</a>
-    <h1>支持与帮助</h1>
-    <p>这里提供太公奇门排盘与转宫的基础使用说明和常见问题。</p>
-
-    <h2>应用用途</h2>
-    <p>太公奇门排盘用于生成和查看太公奇门盘面，辅助传统文化学习、盘面记录和个人研究。应用重点围绕人盘十二宫、转宫断卦、宫位详断和卦例记录。</p>
-
-    <h2>转宫功能</h2>
-    <p>转宫是断卦中常用的视角切换。开启转宫后，点选任意宫位即可把该宫临时设为新的运宫，其他宫位会显示相对宫名。例如以事业宫为运宫时，疾病宫会显示为田宅宫。</p>
-
-    <h2>宫位详断</h2>
-    <p>点选宫位后，应用会显示原宫、转宫后宫名、地支五行、八门、九星、八神，以及该地支与日、时、刻柱之间的合冲害等关系，便于学习和记录。</p>
-
-    <h2>iCloud 同步</h2>
-    <p>应用支持在用户开启后使用 iCloud 同步排盘记录。同步数据存储在用户自己的 iCloud 账户中，开发者不提供独立账号系统。</p>
-
-    <h2>常见问题</h2>
-    <ul>
-      <li>如果无法同步，请确认设备已登录 iCloud，并允许应用使用 iCloud。</li>
-      <li>如果盘面显示异常，请确认输入时间、地区和历法信息是否正确。</li>
-      <li>转宫只改变断卦视角，不会改写原始盘面计算结果。</li>
-      <li>本应用不提供投资、医疗、法律等专业建议。</li>
-    </ul>
-
-    <h2>联系支持</h2>
-    <p>如果需要反馈问题，请联系 jakeyfly@gmail.com，并描述设备型号、系统版本和问题复现步骤。</p>
-
-    <footer>© 2026 liang liu. All rights reserved.</footer>
-  </main>
-</body>
-</html>
+    .mark {
+      width: 72px;
+      height: 72px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(145deg, #17242d, #0b1116);
+      border: 1px solid rgba(217, 168, 77, .45);
+      color: var(--red);
+      font-size: 44px;
+      font-weight: 800;
+      margin-bottom: 24px;
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(34px, 6vw, 56px);
+      line-height: 1.1;
+      letter-spacing: 0;
+    }
+    p {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+    .links {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 32px;
+    }
+    a {
+      color: var(--gold);
+      text-decoration: none;
+    }
+    .button {
+      padding: 10px 14px;
+      border: 1px solid rgba(217, 168, 77, .55);
+      border-radius: 8px;
+      color: var(--text);
+    }
+    section {
+      margin-top: 56px;
+      padding-top: 28px;
+      border-top: 1px solid rgba(217, 168, 77, .18);
+    }
+    h2 {
+      font-size: 22px;
+      margin: 0 0 12px;
+    }
+    ul {
+      margin: 0;
+      padding-left: 20px;
+      color: var(--muted);
+    }
+    footer {
+      margin-top: 64px;
+      color: #837b70;
+      font-size: 14px;
+    }
+  </style></head><body><main><nav><a href="./index.html">应用介绍</a> · <a href="./support.html">支持与帮助</a> · <a href="./privacy.html">隐私政策</a></nav><h1>支持与帮助</h1><p>以下说明对应新版原生应用的实际操作。</p><section><h2>时空起局</h2><p>首页点击“时空起局”，按当前时间生成五柱与盘面。时空入口以北京时间显示；手机所在时区不会改变该入口的显示口径。</p></section>
+<section><h2>八字起局与合参</h2><p>首页点击“八字起局”，输入阳历或阴历出生时间。阴历输入请核对闰月。打开“显示当前时空”可同时查看出生盘与当前时空，进入盘面后也可点击柱旁切换按钮切换合参。</p></section>
+<section><h2>转宫与归位</h2><p>沿圆盘最外侧宫名环拖动，松手后按一个宫位对齐。转宫只改变十二宫的观察视角，不改写原始排盘；“原局”一栏始终显示原始运、命位置。点击“归位”返回原局。</p></section>
+<section><h2>查看宫位关系</h2><p>点击盘面地支，可联动查看日、时、刻柱关系及宫位信息。转宫后显示原宫名作对照，右上角眼睛按钮可显示或隐藏原宫；盘下可展开查看原宫、现宫、门、神、星等详情。</p></section>
+<section><h2>使用真太阳时</h2><p>在八字输入中打开“使用真太阳时”，输入出生记录上的钟表时间并搜索出生地。系统按出生地经度、历史时区和夏令时换算；境外出生记录若采用北京时间，可明确选择。搜索需要联网，选定地点后的换算与排盘可离线进行。</p></section>
+<section><h2>时间规则与计算边界</h2><p>真太阳时入口的年、月柱按实际交节时刻计算，日、时柱按真太阳时计算，23时换日。夏令时造成的重复时间需选择对应时差，不存在的钟表时间会提示更正。支持1901—2099年；临近交节、换日或时辰边界，应核对出生记录及地点精度。</p></section>
+<section><h2>传统口径兼容</h2><p>关闭真太阳时后沿用原站的既有计算口径。部分子时输入可能无法出盘；查表农历与天文历在1933、1996、2057、2060年的部分日期有差异。无法确认结果时会明确提示；开启真太阳时后，涉及已知农历分歧的输入需改用已核对的阳历日期。</p></section>
+<section><h2>记录与回看</h2><p>在盘面下填写“所问之事”和“分析·断卦”，点击“记录此局”。历史卦例可按标题、姓名、日期或正文搜索，重开后可继续补写并点击“更新记录”。当前版本仅在本机保存，不提供应用内iCloud同步。请保留重要记录的副本。</p></section><section><h2>联系开发者</h2><p><a href="https://github.com/liusanye/taigongqimen-pages/issues/new">提交问题反馈</a>（GitHub公开页面）</p><p>请说明设备型号、iOS版本、应用版本及复现步骤。请使用虚构例子，不要公开真实出生资料、联系方式或私人卦例。不要在反馈中发送密码。</p></section><footer>© 2026 liang liu. <nav><a href="./index.html">应用介绍</a> · <a href="./support.html">支持与帮助</a> · <a href="./privacy.html">隐私政策</a></nav></footer></main></body></html>
